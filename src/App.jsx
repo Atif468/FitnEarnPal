@@ -4,6 +4,9 @@ import PromotionalComponent from "./components/PromotionalComponent";
 import Join from "./components/Join";
 import CoachBenefits from "./components/CoachBenefits";
 import KeyFeatures from "./components/KeyFeatures";
+import HowItWorks from "./components/Works";
+import CoachTestimonial from "./components/Coachsays";
+import Footer from "./components/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
 function App() {
@@ -20,6 +23,9 @@ function App() {
       <Join />
       <CoachBenefits />
       <KeyFeatures />
+      <HowItWorks />
+      <CoachTestimonial />
+      <Footer />
     </div>
   );
 }

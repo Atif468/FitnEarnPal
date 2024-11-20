@@ -1,34 +1,34 @@
 import React from "react";
+import { FaGlobe, FaMoneyBillWave, FaStar, FaClock } from "react-icons/fa"; // Import React Icons
 
 const CoachBenefits = () => {
   const features = [
     {
       title: "Global Audience Access",
       description: "Reach a global audience to expand your impact.",
-      icon: "🌐",
+      icon: <FaGlobe />, // Replace emoji with React Icon
     },
     {
       title: "Revenue Opportunities",
       description: "Unlock diverse revenue streams for growth.",
-      icon: "💰",
+      icon: <FaMoneyBillWave />, // Replace emoji with React Icon
     },
     {
       title: "Personal Brand",
       description: "Build and establish your personal brand.",
-      icon: "✨",
+      icon: <FaStar />, // Replace emoji with React Icon
     },
     {
       title: "Work on Your Own Schedule",
       description: "Enjoy the flexibility to work on your own terms.",
-      icon: "🕒",
+      icon: <FaClock />, // Replace emoji with React Icon
     },
   ];
 
   return (
-    <div className="text-white py-16 px-6 ">
-      <div className="text-center mb-12"
-      data-aos="zoom-in"
-      >
+    <div className="text-white py-16 px-6">
+      {/* Header Section */}
+      <div className="text-center mb-12" data-aos="zoom-in">
         <h1 className="text-4xl font-bold mb-4">
           What's in it for <span className="text-orange-500">Coaches?</span>
         </h1>
@@ -38,6 +38,7 @@ const CoachBenefits = () => {
         </p>
       </div>
 
+      {/* Features Section */}
       <div className="relative flex flex-col md:flex-row justify-center gap-12 items-center">
         {/* Phone Mockup */}
         <div className="relative">
@@ -49,7 +50,7 @@ const CoachBenefits = () => {
           />
         </div>
 
-        {/* Features */}
+        {/* Features List */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
           {features.map((feature, index) => (
             <div
@@ -57,7 +58,7 @@ const CoachBenefits = () => {
               className="flex items-center space-x-4 bg-gray-800 rounded-xl p-6 shadow-lg hover:bg-gray-700 transition duration-300"
               data-aos="fade-right"
             >
-              <div className="text-5xl text-orange-500">{feature.icon}</div>
+              <div className="text-5xl text-orange-500">{feature.icon}</div> {/* Icon */}
               <div>
                 <h3 className="text-xl font-semibold">{feature.title}</h3>
                 <p className="text-gray-400">{feature.description}</p>
